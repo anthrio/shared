@@ -1,7 +1,7 @@
-import { Context, Next } from 'koa';
-import { CustomError } from '../errors/custom-error';
+import { Context, Next } from "koa";
+import { CustomError } from "../errors/custom-error";
 
-const handleErrors = async (ctx: Context, next: Next) => {
+export const handleErrors = async (ctx: Context, next: Next) => {
   try {
     await next();
   } catch (err) {
@@ -21,5 +21,3 @@ const handleErrors = async (ctx: Context, next: Next) => {
     };
   }
 };
-
-export default handleErrors;

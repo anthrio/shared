@@ -36,10 +36,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.validate = void 0;
 var request_validation_error_1 = require("../errors/request-validation-error");
-function validate(schema) {
-    var _this = this;
-    return function (ctx, next) { return __awaiter(_this, void 0, void 0, function () {
+var validate = function (schema) {
+    return function (ctx, next) { return __awaiter(void 0, void 0, void 0, function () {
         var err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
@@ -59,5 +59,5 @@ function validate(schema) {
             }
         });
     }); };
-}
-exports.default = validate;
+};
+exports.validate = validate;

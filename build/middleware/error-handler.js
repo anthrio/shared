@@ -36,6 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.handleErrors = void 0;
 var custom_error_1 = require("../errors/custom-error");
 var handleErrors = function (ctx, next) { return __awaiter(void 0, void 0, void 0, function () {
     var err_1;
@@ -67,4 +68,4 @@ var handleErrors = function (ctx, next) { return __awaiter(void 0, void 0, void 
         }
     });
 }); };
-exports.default = handleErrors;
+exports.handleErrors = handleErrors;
